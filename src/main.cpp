@@ -143,7 +143,8 @@ int main()
           auto msg = "42[\"best_particle\"," + msgJson.dump() + "]";
           // std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
-	  
+
+      //cout << "debug=" << msg.data() << endl;
         }
       } else {
         std::string msg = "42[\"manual\",{}]";
